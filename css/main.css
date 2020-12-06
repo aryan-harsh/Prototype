@@ -45,7 +45,7 @@ main > section {
     border-radius: 0;
     border: 0;
     position: relative;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .btn-blue {
@@ -62,7 +62,7 @@ main > section {
 }
 
 .bg-blue {
-    background-color: #009EE3;
+    background-color: rgba(69,69,69,0.6);
 }
 
 /* Sweep To Right */
@@ -103,7 +103,9 @@ main > section {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #fff;
+	background: rgba(69,69,69,0.7);
+    color:white;
+    border-radius: 40px;
 	
 	-webkit-transform: scaleX(0);
 	   -moz-transform: scaleX(0);
@@ -132,7 +134,9 @@ main > section {
 }
 
 .btn-effect:hover, .btn-effect:focus, .btn-effect:active {
-	color: #009EE3;
+	/*color: rgba(69,69,69,0.6);*/
+    border-radius: 40px;
+    color:white;
 }
 
 .btn-effect:hover:before, .btn-effect:focus:before, .btn-effect:active:before {
@@ -155,7 +159,7 @@ main > section {
     margin: 0 0 30px;
     padding-bottom: 30px;
     position: relative;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .sec-title.white h2 {
@@ -163,7 +167,7 @@ main > section {
 }
 
 .sec-title h2:after {
-    border-bottom: 1px solid #009ee3;
+    border-bottom: 1px solid rgb(230,43,30);
     content: "";
     display: block;
     left: 45%;
@@ -281,7 +285,7 @@ h1.navbar-brand {
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
     font-size: 15px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 
@@ -347,7 +351,7 @@ h1.navbar-brand {
     font-size: 52px;
     font-weight: 400;
     margin-bottom: 25px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .caption-content > span {
@@ -437,7 +441,7 @@ h1.navbar-brand {
 }
 
 .fancybox-item.fancybox-close {
-    background: url("../img/icons/close.png") no-repeat scroll 0 0 transparent;
+    background: url("../img/icons/close.png") no-repeat scroll 0 0 transparent rgba(69,69,69,0.6);
     height: 50px;
     right: 0;
     top: 0;
@@ -445,14 +449,14 @@ h1.navbar-brand {
 }
 
 .fancybox-next span {
-    background: url("../img/right.png") no-repeat scroll center center #009ee3;
+    background: url("../img/right.png") no-repeat scroll center center rgba(69,69,69,0.6);
     height: 50px;
     width: 50px;
     right: 0;
 }
 
 .fancybox-prev span {
-    background: url("../img/left.png") no-repeat scroll center center #009ee3;
+    background: url("../img/left.png") no-repeat scroll center center rgba(69,69,69,0.6);
     height: 50px;
     width: 50px;
     left: 0;
@@ -487,8 +491,7 @@ h1.navbar-brand {
 
     margin-top: 0px;
     padding-top: 30px;
-    
-     height: 90%;
+     height: 88%;
     width: 100%;
     opacity: 0;
     top: 0;
@@ -506,7 +509,7 @@ h1.navbar-brand {
 #about h3 {
     color: #fff;
     margin: 0 0 35px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 #about .welcome-block h3 {
@@ -524,6 +527,7 @@ h1.navbar-brand {
     font-size: 17px;
     line-height: 20px;
     margin-bottom: 70px;
+    text-align: justify;
 }
 
 .owl-buttons {
@@ -577,14 +581,14 @@ h1.navbar-brand {
 }
 
 .service-item:hover .service-icon {
-    border: 3px solid #009ee3;
+    border: 3px solid rgba(69,69,69,0.6);
     margin-bottom: 20px;
-    color: #009ee3;
+    color: rgba(69,69,69,0.6);
 }
 
 .service-item h3 {
     font-size: 20px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 /*=================================================================
@@ -671,7 +675,7 @@ ul.external li a {
 }
 
 ul.external li a:hover {
-    background-color: #009EE3;
+    background-color: rgba(69,69,69,0.6);
     color: #fff;
 }
 
@@ -765,7 +769,7 @@ ul.external li a:hover {
     display: inline-block;
     font-weight: 700;
     margin: 40px 0 30px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 #testimonials .owl-controls.clickable {
@@ -776,6 +780,7 @@ ul.external li a:hover {
 #testimonials .owl-buttons {
     border: 2px solid #fff;
     float: inherit;
+    padding-bottom: 10px;
 }
 
 #testimonials .owl-prev:hover,
@@ -798,7 +803,7 @@ ul.external li a:hover {
     display: block;
     font-size: 24px;
     padding: 30px 0;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .price-table .value {
@@ -814,7 +819,7 @@ ul.external li a:hover {
 }
 
 .price-table.featured .value {
-    background-color: #009EE3;
+    background-color: rgba(69,69,69,0.6);
     color: #fff;
 }
 
@@ -858,12 +863,12 @@ ul.external li a:hover {
 
 .price-table ul li a {
     display: block;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .price-table.featured ul li:last-child,
 .price-table ul li:last-child:hover {
-    background-color: #009EE3;
+    background-color: rgba(69,69,69,0.6);
 }
 
 .price-table.featured ul li:last-child a,
@@ -962,7 +967,7 @@ textarea.form-control {
     font-weight: 700;
     margin-bottom: 15px;
     padding-bottom: 15px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .contact-details p {
@@ -1014,7 +1019,7 @@ textarea.form-control {
 
 .footer-content > div > p:first-child {
     margin-bottom: 15px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .subscribe-form {
@@ -1100,7 +1105,7 @@ textarea.form-control {
 }
 
 .footer-social ul li a:hover {
-    color: #009EE3;
+    color: rgba(69,69,69,0.6);
 }
 
 .footer-content > p {
@@ -1442,4 +1447,3 @@ textarea.form-control {
 .rednav .navbar-inverse .navbar-nav > li > a x
 color:red;
 }
-
