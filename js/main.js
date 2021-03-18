@@ -2,11 +2,15 @@
 /*	Preloader
 /* ========================================================================= */
 
-jQuery(window).load(function(){
-
-	$("#preloader").fadeOut("slow");
-
-});
+jQuery(window).load(setTimeout(function (){
+    $("#loadin").css("display","none");
+    $("#loading").css("display","none");
+    $('html, body').css({
+        overflow: 'auto',
+        height: 'auto'
+    });
+    
+},3000));
 
 /* ========================================================================= */
 /*  Welcome Section Slider
@@ -80,6 +84,44 @@ $(function() {
 });
 
 
+	/* ========================================================================= */
+	/*	Timer Setup
+	/* ========================================================================= */
+    $(function(){
+        function upDateTimer(){
+            let eventDate = new Date("04/10/2021 18:00:00").getTime();
+            let d = new Date();
+            let currentDate = d.getTime();
+            let timeLeft = eventDate-currentDate;
+            if(timeLeft<0){
+                timeLeft=0;
+            }
+            let days,hours,minutes,seconds;
+            days = Math.floor(timeLeft/86400000);
+            timeLeft = timeLeft%86400000
+            hours = Math.floor((timeLeft)/3600000);
+            timeLeft = timeLeft%3600000;
+            minutes = Math.floor((timeLeft)/60000);
+            timeLeft = timeLeft%60000;
+            seconds = Math.floor((timeLeft)/1000);
+            $(".timer-days").text(days.toLocaleString('en-US', {
+                minimumIntegerDigits: 2
+              }));
+            $(".timer-hours").text(hours.toLocaleString('en-US', {
+                minimumIntegerDigits: 2
+              }));
+            $(".timer-minutes").text(minutes.toLocaleString('en-US', {
+                minimumIntegerDigits: 2
+              }));
+            $(".timer-seconds").text(seconds.toLocaleString('en-US', {
+                minimumIntegerDigits: 2
+              }));
+        }
+        setInterval(upDateTimer,1000);
+    })
+    
+
+
 
 $(document).ready(function(){
 
@@ -87,8 +129,8 @@ $(document).ready(function(){
 	/*	Menu item highlighting
 	/* ========================================================================= */
 
-	jQuery('#nav').singlePageNav({
-		offset: jQuery('#nav').outerHeight(),
+	jQuery('#nav .scroll').singlePageNav({
+		offset: jQuery('#nav .scroll').outerHeight(),
 		filter: ':not(.external)',
 		speed: 2000,
 		currentClass: 'current',
